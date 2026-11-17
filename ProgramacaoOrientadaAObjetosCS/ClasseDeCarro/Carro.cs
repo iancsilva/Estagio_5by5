@@ -1,4 +1,4 @@
-﻿class Carro
+﻿public class Carro
 {
     public string Fabricante;
     public string Modelo;

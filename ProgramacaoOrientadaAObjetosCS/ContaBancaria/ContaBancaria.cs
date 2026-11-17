@@ -1,4 +1,4 @@
-﻿class ContaBancaria
+﻿public class ContaBancaria
 {
     public string Titular;
     public double Saldo;

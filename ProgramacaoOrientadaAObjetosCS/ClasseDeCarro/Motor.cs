@@ -1,4 +1,4 @@
-﻿class Motor
+﻿public class Motor
 {
     public string Combustivel;
     public double Cilindrada;
