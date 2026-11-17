@@ -2,5 +2,5 @@
   <Project Path="ClasseDeCarro/ClasseDeCarro.csproj" />
   <Project Path="ContaBancaria/ContaBancaria.csproj" Id="ebb0cfca-06b5-49ae-9f6d-c43b6b4ac48d" />
   <Project Path="Livros/Livros.csproj" Id="e0e07210-f149-44f2-a79d-4019304f24f7" />
-  <Project Path="POO/POO.csproj" />
+  <Project Path="POO/Classes.csproj" />
 </Solution>
