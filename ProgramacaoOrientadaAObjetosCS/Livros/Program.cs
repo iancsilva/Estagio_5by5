@@ -1,12 +1,12 @@
-﻿Livro CriarLivro()
+﻿Livro CriarLivro(int numeroDeLivros)
 {
-    Console.WriteLine("Informe o título do livro:");
+    Console.WriteLine($"\nInforme o título do livro {numeroDeLivros}:");
     string titulo = Console.ReadLine();
 
-    Console.WriteLine("\nInforme o nome do autor:");
+    Console.WriteLine($"\nInforme o nome do autor do livro {numeroDeLivros}:");
     string autor = Console.ReadLine();
 
-    Console.WriteLine("\nInforme o número de páginas do livro:");
+    Console.WriteLine($"\nInforme o número de páginas do livro {numeroDeLivros}:");
     int numeroDePaginas = int.Parse(Console.ReadLine());
 
     while (numeroDePaginas < 1)
@@ -23,5 +23,31 @@
     return livro;
 }
 
-Livro Livro1 = CriarLivro();
+Livro[] CriarConjuntoDeLivros()
+{
+    Console.WriteLine("Informe quantos livros deseja criar: ");
+    int numeroDeLivros = int.Parse(Console.ReadLine());
 
+    Livro[] conjunto = new Livro[numeroDeLivros];
+
+    for (int livro = 0; livro < numeroDeLivros; livro++)
+    {
+        conjunto[livro] = CriarLivro(livro + 1);
+    }
+
+    return conjunto;
+}
+
+Livro[] livros = CriarConjuntoDeLivros();
+
+void ExibirLivros(int numeroDeLivros)
+{
+    for (int livro = 0; livro < numeroDeLivros; livro++)
+    {
+        Console.WriteLine($"\nLivro {livro + 1}:\n");
+        Console.WriteLine(livros[livro].ToString());
+        Console.WriteLine();
+    }
+}
+
+ExibirLivros(livros.Length);

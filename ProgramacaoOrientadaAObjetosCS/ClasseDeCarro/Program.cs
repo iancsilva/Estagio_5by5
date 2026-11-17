@@ -1,6 +1,4 @@
-﻿
-Carro[] carros = CriarConjuntoDeCarros();
-Carro CriarCarro(int numeroDoCarro)
+﻿Carro CriarCarro(int numeroDoCarro)
 {
     Console.WriteLine($"\n--------------------- Carro {numeroDoCarro} ---------------------");
 
@@ -35,7 +33,6 @@ Carro CriarCarro(int numeroDoCarro)
     return new Carro(fabricante, modelo, anoDeFabricacao, anoDoModelo, valorDeVenda, tipoDeCombustivel, cilindrada, potencia);
 
 }
-
 Carro[] CriarConjuntoDeCarros()
 {
     Console.WriteLine("Informe quantos carros deseja criar: ");
@@ -50,6 +47,8 @@ Carro[] CriarConjuntoDeCarros()
 
     return conjunto;
 }
+
+Carro[] carros = CriarConjuntoDeCarros();
 
 void ExibirCarros(int numeroDeCarros)
 {
