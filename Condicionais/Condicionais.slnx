@@ -1,0 +1,11 @@
+<Solution>
+  <Project Path="AnoBissexto/AnoBissexto.csproj" />
+  <Project Path="AumentoDeSalario/AumentoDeSalario.csproj" />
+  <Project Path="FaixaEtaria/FaixaEtaria.csproj" />
+  <Project Path="IdentificadorDeTriangulos/IdentificadorDeTriangulos.csproj" />
+  <Project Path="IMC/IMC.csproj" />
+  <Project Path="MaiorOuMenor/MaiorOuMenor.csproj" />
+  <Project Path="MediaEStatusDeAprovacao/MediaEStatusDeAprovacao.csproj" />
+  <Project Path="OperadoresAritmeticosBasicos/OperadoresAritmeticosBasicos.csproj" />
+  <Project Path="ParOuImpar/ParOuImpar.csproj" />
+</Solution>

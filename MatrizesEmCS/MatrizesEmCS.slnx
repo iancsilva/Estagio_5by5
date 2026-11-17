@@ -1,0 +1,8 @@
+<Solution>
+  <Project Path="BatalhaNaval/BatalhaNaval.csproj" Id="1b3061aa-fa6e-447a-9089-41005dc954ef" />
+  <Project Path="Boletim/Boletim.csproj" Id="9458f29f-faaf-4ff2-baa6-b4103acef0cd" />
+  <Project Path="MatrizDeTrasPraFrente/MatrizDeTrasPraFrente.csproj" />
+  <Project Path="Matrizes/Matrizes.csproj" />
+  <Project Path="MatrizInversa/MatrizInversa.csproj" />
+  <Project Path="SomaDeLadosDeMatriz/SomaDeLadosDeMatriz.csproj" Id="31204b08-c25a-4333-b4a8-3ba50e81108d" />
+</Solution>
