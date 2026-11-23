@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="ListaDeContatosEmArquivo/ListaDeContatosEmArquivo.csproj" />
+  <Project Path="ManipulacaoDeArquivosEmCS/ManipulacaoDeArquivosEmCS.csproj" />
+</Solution>
