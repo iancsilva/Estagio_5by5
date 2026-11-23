@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="Filas/Filas.csproj" />
+  <Project Path="GerenciamentoDeFilas/GerenciamentoDeFilas.csproj" Id="8cede1ad-e44b-4edd-aa44-51e87689760b" />
+</Solution>
