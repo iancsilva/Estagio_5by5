@@ -6,6 +6,7 @@ if (!File.Exists(filePath))
 {
     Directory.CreateDirectory(path);
     File.Create(filePath).Close();
+    File.WriteAllText(filePath, "\nNome:   \t\t   Número: \n");
 
 }
 
@@ -19,9 +20,11 @@ void CriarContato()
 
     string contato = $"\n{nome} \t | \t {numero}";
 
-    if(File.ReadAllText(filePath) == "") File.AppendAllText(filePath, "\nNome: \t\t   \t Número: \n");
+    var writer = new StreamWriter(filePath, true);
+    
+    writer.WriteLine(contato);
 
-    File.AppendAllText(filePath, contato);
+    writer.Close();
 }
 
 while (true)
@@ -34,11 +37,12 @@ while (true)
         case 1:
             CriarContato();
             break;
-
+            
         case 2:
-            string lista = File.ReadAllText(filePath);
-            if (lista != "") Console.WriteLine(lista);
-            else Console.WriteLine("\nA lista está vazia\n");
+            var reader = new StreamReader(filePath);
+            string lista = reader.ReadToEnd();
+            reader.Close();
+            Console.WriteLine(lista);
             break;
 
         case 3:
